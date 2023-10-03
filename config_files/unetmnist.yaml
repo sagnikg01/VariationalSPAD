@@ -1,0 +1,16 @@
+dataset:
+  type: "MNIST"
+  data_dir: "/home/datasets/MNIST/train"
+  batch_size: 32
+
+model:
+  type: "unet"  # Replace with your model type
+
+training:
+  num_epochs: 50
+  learning_rate: 0.001
+  checkpoint_dir: "checkpoints/"  # Directory to save model checkpoints
+  checkpoint_interval: 10  # Save a checkpoint every <checkpoint_interval> epochs
+
+wandb:
+  project_name: "SPAD-UNetMNIST"
